@@ -9,12 +9,12 @@
  
 ## Requirement
  this is module so install using Magisk app.
-  - Android 12+ (AudioHAL 7.0)
+  - Android 12+
   - Mediatek
   
  *does not cause softbrick or bootloop.
 
-## Tested on
+## Tested on (Stock ROM)
   - Android 12 MIUI 13
   - Android 13 MIUI 14
 
