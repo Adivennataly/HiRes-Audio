@@ -4,7 +4,7 @@
  *This module is not active if AML (Audio Modification Library) is installed.
 ## Requirement
  this is module so install using Magisk app.
-  - Android 12
+  - Android 12+ (AudioHAL 7.0)
   
  *does not cause softbrick or bootloop.
 
