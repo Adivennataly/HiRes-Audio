@@ -1,5 +1,5 @@
 ## Hi-Res Audio™
- Enable High Resolution Audio in Audio_Policy config file for (Mediatek only) up to 32bit/192kHz & enable 24-channel (22.2) for audio output (Speaker & Wired).
+ Enable High Resolution Audio in Audio_Policy config file for (Xiaomi with Mediatek only) up to 32bit/192kHz & enable 24-channel (22.2) for audio output (Speaker & Wired).
 
  *This module is not active if AML (Audio Modification Library) is installed.
 ## Requirement
