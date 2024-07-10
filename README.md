@@ -5,6 +5,7 @@
 ## Requirement
  this is module so install using Magisk app.
   - Android 12+ (AudioHAL 7.0)
+  - Mediatek
   
  *does not cause softbrick or bootloop.
 
