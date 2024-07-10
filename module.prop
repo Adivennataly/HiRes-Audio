@@ -1,0 +1,6 @@
+id=HiResAudio
+name=Hi-Res Audio™
+version=v1.0 with 24-Channel
+versionCode=10
+author=Adinata | @Adivennataly
+description=enable High Resolution Audio in Audio_Policy config file for (Mediatek only) up to 32bit/192kHz & enable 24-channel (22.2) for audio output (Speaker & Wired).
