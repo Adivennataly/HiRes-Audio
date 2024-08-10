@@ -7,7 +7,7 @@
  
  audio_policy_configuration.xml : https://dumps.tadiphone.dev/dumps/xiaomi/agate/-/blob/missi-user-12-SP1A.210812.016-V13.0.2.0.SKWMIXM-release-keys/vendor/etc/audio_policy_configuration.xml?ref_type=heads
 
- AUDIO_CHANNEL_OUTPUT : https://android.googlesource.com/platform/system/media/+/master/audio/include/system/audio.h
+ AudioPolicy services : https://android.googlesource.com/platform/system/media/+/master/audio/include/system/audio.h
  
 ## Requirement
  this is module so install using Magisk app.
