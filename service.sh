@@ -15,14 +15,15 @@ resetprop -n flac.sw.decoder.24bit.support true
 resetprop -n audio.offload.disable false
 resetprop -n audio.offload.pcm.enable true
 resetprop -n audio.offload.track.enable true
+resetprop -n audio.offload.video true
 resetprop -n audio.offload.passthrough false
 resetprop -n audio.offload.buffer.size.kb 32
 resetprop -n audio.offload.gapless.enabled true
 resetprop -n audio.offload.multiple.enabled true
 resetprop -n audio.offload.multiaac.enable true
-resetprop -n audio.offload.pcm.16bit.enabled true
-resetprop -n audio.offload.pcm.24bit.enabled true
-resetprop -n audio.offload.pcm.32bit.enabled true
+resetprop -n audio.offload.pcm.16bit.enable true
+resetprop -n audio.offload.pcm.24bit.enable true
+resetprop -n audio.offload.pcm.32bit.enable true
 
 #Wait for boot to finish completely
 dbg "Sleeping until boot completes."
