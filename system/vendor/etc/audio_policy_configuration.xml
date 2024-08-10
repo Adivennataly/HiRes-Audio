@@ -18,7 +18,7 @@
     <!-- version section contains a “version” tag in the form “major.minor” e.g version=”1.0” -->
 
     <!-- Global configuration Decalaration -->
-    <globalConfiguration speaker_drc_enabled="true" call_screen_mode_supported="true"/>
+    <globalConfiguration speaker_drc_enabled="false" call_screen_mode_supported="true"/>
 
     <!-- Modules section:
         There is one section per audio HW module present on the platform.
@@ -58,87 +58,87 @@
             <mixPorts>
                 <mixPort name="primary output" role="source" flags="AUDIO_OUTPUT_FLAG_PRIMARY">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="deep_buffer" role="source" flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="fast" role="source" flags="AUDIO_OUTPUT_FLAG_FAST">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="voip_rx" role="source" flags="AUDIO_OUTPUT_FLAG_VOIP_RX">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                           samplingRates="16000 48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                           samplingRates="16000 48000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                           samplingRates="16000 48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                           samplingRates="16000 48000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="mmap_no_irq_out" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT AUDIO_OUTPUT_FLAG_MMAP_NOIRQ">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="direct_pcm" role="source"
                         flags="AUDIO_OUTPUT_FLAG_DIRECT">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="compressed_offload" role="source"
-                         flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_COMPRESS_OFFLOAD|AUDIO_OUTPUT_FLAG_NON_BLOCKING">
+                         flags="AUDIO_OUTPUT_FLAG_COMPRESS_OFFLOAD AUDIO_OUTPUT_FLAG_NON_BLOCKING">
                     <profile name="" format="AUDIO_FORMAT_MP3"
-                             samplingRates="44100 48000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_FLAC"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_ALAC"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_APE"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_AAC_LC"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_AAC_HE_V1"
-                             samplingRates="44100 48000 88200 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 88200 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_AAC_HE_V2"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_WMA"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_WMA_PRO"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_VORBIS"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_AAC_ADTS_LC"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_AAC_ADTS_HE_V1"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_AAC_ADTS_HE_V2"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="incall_music_uplink" role="source" flags="AUDIO_OUTPUT_FLAG_INCALL_MUSIC">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
                 </mixPort>
                 <mixPort name="hdmi_mix_output" role="source">
                 </mixPort>
@@ -179,46 +179,46 @@
                 <!-- Output devices declaration  i.e. Sink DEVICE PORT -->
                 <devicePort tagName="Earpiece" type="AUDIO_DEVICE_OUT_EARPIECE" role="sink">
                    <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
                 <devicePort tagName="Speaker" role="sink" type="AUDIO_DEVICE_OUT_SPEAKER">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
                 <devicePort tagName="Wired Headset" type="AUDIO_DEVICE_OUT_WIRED_HEADSET" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
                 <devicePort tagName="Wired Headphones" type="AUDIO_DEVICE_OUT_WIRED_HEADPHONE" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_22POINT2"/>
+                             samplingRates="44100 48000 96000 192000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
                 <devicePort tagName="HDMI" type="AUDIO_DEVICE_OUT_AUX_DIGITAL" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
-                             samplingRates="8000 11025 16000 22050 32000 44100 48000 64000 88200 96000 128000 176400 192000"
-                             channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
+                             samplingRates="44100 48000 96000 192000"
+                             channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
-                             samplingRates="8000 11025 16000 22050 32000 44100 48000 64000 88200 96000 128000 176400 192000"
-                             channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
+                             samplingRates="44100 48000 96000 192000"
+                             channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="8000 11025 16000 22050 32000 44100 48000 64000 88200 96000 128000 176400 192000"
-                             channelMasks="AUDIO_CHANNEL_OUT_ALL"/>
+                             samplingRates="44100 48000 96000 192000"
+                             channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
                 <devicePort tagName="BT SCO" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
